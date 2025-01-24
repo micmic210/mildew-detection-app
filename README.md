@@ -144,11 +144,43 @@ This pipeline directly addresses the challenges faced by Farmy & Foods, automati
 - Accuracy: Provides reliable predictions with a target accuracy of 97%.
 - Insights: Generates farm-wide metrics, enabling smarter resource allocation and effective disease management.
 
+## CRISP-DM Framework
 
+1.	Business Understanding:
+	- Problem: Manual inspection of cherry leaves is inefficient and unscalable.
+	- Goal: Develop a scalable ML solution for leaf classification and farm insights.
+2.	Data Understanding:
+	-	Dataset sourced from Kaggle, containing 4,000 labeled images.
+	-	Images represent two classes: Healthy and Infected.
+3.	Data Preparation:
+	-	Resize images to 50x50 pixels for model compatibility.
+	-	Normalize pixel values and augment data (rotation, flipping) for improved generalization.
+4.	Modeling:
+	-	Build a CNN architecture with convolutional, pooling, and fully connected layers.
+5.	Evaluation:
+	-	Evaluate model performance using metrics such as precision, recall, F1-score, and accuracy.
+6.	Deployment:
+	-	Deploy the model within a Streamlit dashboard for real-time predictions and insights.
 
 
 ## Dashboard Design
-
+The dashboard consists of five interactive pages:
+1.	Project Overview:
+	-	Introduces powdery mildew and project objectives.
+	-	Displays links to the README and dataset.
+2.	Leaf Visualizer:
+	-	Average and variability images for healthy and infected leaves.
+	-	Image montage comparisons.
+3.	Mildew Detector:
+	-	File uploader for real-time leaf classification.
+	-	Option to download prediction results as a CSV file.
+4.	Farm Insights:
+	-	Aggregated metrics: Infection percentages, severity levels.
+	-	Heatmap visualizing infection patterns across farms.
+	-	Filters for date range and farm region.
+5.	Model Performance:
+	-	Training and validation accuracy/loss plots.
+	-	Confusion matrix and classification report.
 
 
 ## Unfixed Bugs
