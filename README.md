@@ -182,6 +182,56 @@ The dashboard consists of five interactive pages:
 	-	Training and validation accuracy/loss plots.
 	-	Confusion matrix and classification report.
 
+## User Stories
+
+1.	Intuitive Navigation
+	-	User Story:
+    As a client, I want an intuitive dashboard with clear navigation so that I can easily access data, predictions, and insights.
+	•	Acceptance Criteria:
+	•	A navigation bar is present and allows switching between all pages.
+	•	All navigation links are clearly labeled and functional.
+	•	The user can access any page in no more than two clicks.
+
+2.	Visual Differentiation
+	-	User Story:
+As a client, I want to observe average and variability images of healthy and mildew-infected cherry leaves so that I can visually differentiate between the two categories.
+	•	Acceptance Criteria:
+	•	The dashboard displays average and variability images for healthy and infected leaves.
+	•	The user can toggle between these visualizations using checkboxes or buttons.
+	•	The visualizations are clear and labeled with appropriate captions.
+
+3.	Image Montage
+	-	User Story:
+As a client, I want to view montages of healthy and infected leaves so that I can compare them more easily.
+	•	Acceptance Criteria:
+	•	The user can select “Healthy” or “Infected” leaves to create a montage.
+	•	The montage displays at least 9 images per category in a grid format.
+	•	There is a button to dynamically generate a new montage.
+
+4.	Real-Time Predictions
+	-	User Story:
+As a client, I want to upload images of cherry leaves and receive predictions about their health status (healthy/infected) in real-time.
+	•	Acceptance Criteria:
+	•	A file uploader is available and supports single and multiple image uploads.
+	•	The system predicts the health status of each uploaded image with at least 97% accuracy.
+	•	Predictions are displayed on the dashboard with confidence scores.
+
+5.	CSV Download of Predictions
+	-	User Story:
+As a client, I want to download a CSV report summarizing predictions for all uploaded images so that I can keep a record for future analysis.
+	•	Acceptance Criteria:
+	•	A download button is available on the prediction results page.
+	•	The CSV includes the filename, prediction, and confidence score for each image.
+	•	The file downloads correctly when clicked.
+
+6.	Infection Rate Summary
+	-	User Story:
+As a client, I want to see a summary of the infection rate (percentage of healthy vs. infected leaves) based on the uploaded images so that I can quickly understand the overall situation.
+	•	Acceptance Criteria:
+	•	A pie chart or bar chart displays the percentage of healthy vs. infected leaves.
+	•	The chart updates dynamically based on the uploaded images.
+	•	The chart is labeled clearly and easy to interpret.
+
 
 ## Unfixed Bugs
 
