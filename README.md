@@ -2,11 +2,9 @@
 
 ## Project Overview
 
-The cherry plantation at Farmy & Foods faces a significant challenge with powdery mildew, a fungal disease that affects the leaves of cherry trees. The disease manifests as white powdery spots on leaves, potentially leading to poor crop yield and reduced product quality.
+Farmy & Foods faces a significant challenge with powdery mildew, a fungal disease that impacts cherry leaves. This disease appears as white, powdery spots and can significantly reduce crop yield and quality. Currently, the manual inspection process for identifying mildew is labor-intensive, requiring 30 minutes per tree and making it unscalable for thousands of trees spread across multiple farms.
 
-Currently, employees spend approximately 30 minutes inspecting each tree for signs of mildew and applying treatments where necessary. With thousands of trees across multiple farms, this process is time-consuming and unsustainable.
-
-This project leverages machine learning to build an automated mildew detection system. The system analyzes images of cherry leaves to instantly determine whether a leaf is healthy or infected, streamlining the inspection process and improving scalability.
+The goal of this project is to leverage machine learning to automate the detection of powdery mildew in cherry leaves using image classification. The solution will provide real-time predictions and farm-wide insights, enabling stakeholders to prioritize treatment efficiently and reduce operational costs.
 
 
 ## Dataset Content
@@ -15,21 +13,42 @@ This project leverages machine learning to build an automated mildew detection s
 - The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
 
 ## Business Requirements
-
-The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute. The company has thousands of cherry trees located on multiple farms across the country. As a result, this manual process is not scalable due to the time spent in the manual process inspection.
-
-To save time in this process, the IT team suggested an ML system that detects instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests, and if this initiative is successful, there is a realistic chance to replicate this project for all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
-
-- 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
-- 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+1.	Visual Differentiation:
+	- Conduct a study to visually differentiate healthy cherry leaves from those with powdery mildew using data visualization techniques.
+2.	Disease Detection:
+	- Develop a Convolutional Neural Network (CNN) to classify cherry leaf images as healthy or infected.
+3.	Farm Insights:
+	- Provide farm-wide aggregated metrics, including:
+	- Percentage of infected vs. healthy leaves.
+	- Heatmaps showing infection distribution across farm regions.
+	- Severity breakdowns for prioritizing treatment.
 
 ## Hypothesis and how to validate?
+Hypothesis 1: Visual Distinction
+- Hypothesis: Healthy leaves and mildew-infected leaves exhibit distinct visual patterns that can be identified through data analysis.
+- Validation: Compute average and variability images for both healthy and infected leaves. Use montages to highlight these differences visually.
 
+
+Hypothesis 2: Classification Accuracy
+- Hypothesis: A CNN can classify cherry leaves as healthy or infected with at least 97% accuracy.
+- Validation: Train the CNN model and evaluate its performance using precision, recall, F1-score, and accuracy metrics on a test dataset.
+
+Hypothesis 3: Farm-Level Insights
+- Hypothesis: Aggregating predictions across multiple leaves can reveal infection patterns and high-risk areas within the farm.
+- Validation: Generate aggregated farm-wide metrics, including infection rates, severity distributions, and heatmaps, to visualize infection trends.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-
+1.	Visual Differentiation:
+    - Data Visualization: Create average and variability images for healthy and infected leaves.
+	- Rationale: Helps stakeholders visually identify distinct patterns and characteristics of mildew-infected leaves.
+2.	Disease Detection:
+	- ML Task: Train a CNN model for binary classification (Healthy vs. Infected).
+	- Rationale: Automates the manual inspection process, ensuring consistent and accurate results with minimal time investment.
+3.	Farm Insights:
+	- Data Visualization: Generate heatmaps and bar charts for infection trends, severity levels, and geographical distributions.
+	- Rationale: Provides actionable insights to prioritize treatment and optimize resource allocation.
 
 ## ML Business Case
 The objective of this project is to develop a machine learning pipeline capable of automating the detection of powdery mildew in cherry leaves, achieving the following goals:
@@ -37,6 +56,10 @@ The objective of this project is to develop a machine learning pipeline capable 
 	- Reduce the manual inspection time from 30 minutes per tree to a matter of seconds through an automated classification system.
 - 2 - Provide Actionable Insights:
 	- Generate farm-wide metrics to identify infection trends, high-risk areas, and prioritize treatment allocation for improved operational efficiency.
+
+Key Goals:
+- Achieve at least 97% accuracy for leaf classification.
+- Provide real-time predictions and insights to reduce inspection time and improve farm management.
 
 
 Machine Learning Pipeline: Steps and Business Relevance
