@@ -17,25 +17,15 @@ The goal of this project is to leverage machine learning to automate the detecti
 	- Conduct a study to visually differentiate healthy cherry leaves from those with powdery mildew using data visualization techniques.
 2.	Disease Detection:
 	- Develop a Convolutional Neural Network (CNN) to classify cherry leaf images as healthy or infected.
-3.	Farm Insights:
-	- Provide farm-wide aggregated metrics, including:
-	- Percentage of infected vs. healthy leaves.
-	- Heatmaps showing infection distribution across farm regions.
-	- Severity breakdowns for prioritizing treatment.
 
 ## Hypothesis and how to validate?
 Hypothesis 1: Visual Distinction
 - Hypothesis: Healthy leaves and mildew-infected leaves exhibit distinct visual patterns that can be identified through data analysis.
 - Validation: Compute average and variability images for both healthy and infected leaves. Use montages to highlight these differences visually.
 
-
 Hypothesis 2: Classification Accuracy
 - Hypothesis: A CNN can classify cherry leaves as healthy or infected with at least 97% accuracy.
 - Validation: Train the CNN model and evaluate its performance using precision, recall, F1-score, and accuracy metrics on a test dataset.
-
-Hypothesis 3: Farm-Level Insights
-- Hypothesis: Aggregating predictions across multiple leaves can reveal infection patterns and high-risk areas within the farm.
-- Validation: Generate aggregated farm-wide metrics, including infection rates, severity distributions, and heatmaps, to visualize infection trends.
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
