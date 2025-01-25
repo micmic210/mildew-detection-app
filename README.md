@@ -1,11 +1,17 @@
 # Mildew Detection in Cherry Leaves
 
-## Project Overview
+## Introduction 
 
-Farmy & Foods faces a significant challenge with powdery mildew, a fungal disease that impacts cherry leaves. This disease appears as white, powdery spots and can significantly reduce crop yield and quality. Currently, the manual inspection process for identifying mildew is labor-intensive, requiring 30 minutes per tree and making it unscalable for thousands of trees spread across multiple farms.
+Introduction
 
-The goal of this project is to leverage machine learning to automate the detection of powdery mildew in cherry leaves using image classification. The solution will provide real-time predictions and farm-wide insights, enabling stakeholders to prioritize treatment efficiently and reduce operational costs.
+This project focuses on creating a machine learning solution to address the challenge of powdery mildew outbreaks in cherry plantations at Farmy & Foods. Currently, the process of manually inspecting each tree is time-intensive and labor-intensive, making it inefficient for large-scale operations. By leveraging image analysis and deep learning, this project aims to develop an efficient and accurate system for detecting powdery mildew in cherry leaves.
 
+The project will integrate a robust machine learning model with a user-friendly web application to:
+- Automate inspections: Reduce manual inspection time and associated labor costs.
+- Enhance disease management: Enable early detection and intervention to minimize crop losses.
+- Increase operational efficiency and sustainability: Support more efficient, scalable, and environmentally sustainable agricultural practices at Farmy & Foods.
+
+The solution will leverage deep learning techniques, specifically Convolutional Neural Networks (CNNs), to analyze images of cherry leaves and classify them as healthy or infected with powdery mildew. By using real-world datasets of cherry leaves collected from Farmy & Foods’ plantations, the system will be tailored to their specific needs while offering the potential for scalability to other crops in the future.
 
 ## Dataset Content
 
@@ -13,10 +19,20 @@ The goal of this project is to leverage machine learning to automate the detecti
 - The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
 
 ## Business Requirements
-1.	Visual Differentiation:
-	- Conduct a study to visually differentiate healthy cherry leaves from those with powdery mildew using data visualization techniques.
-2.	Disease Detection:
-	- Develop a Convolutional Neural Network (CNN) to classify cherry leaf images as healthy or infected.
+
+Farmy & Foods is experiencing a powdery mildew outbreak in their cherry plantations.
+- Current Challenges:
+	- Manual inspection of each tree is time-consuming and labor-intensive.
+	- Employees spend significant time visually inspecting leaves for signs of mildew, taking approximately 30 minutes per tree.
+	- The manual process is unsustainable for thousands of trees spread across multiple farms nationwide.
+- Proposed Solution:
+	- Implement a machine learning (ML) system to instantly and accurately detect powdery mildew in cherry leaves using image analysis.
+	- If successful, this system can be scaled to other crops and pest/disease detection processes.
+- Client Objectives:
+	1.	Visual Differentiation Study: Research and document the visual characteristics of healthy vs. infected cherry leaves to better understand the disease.
+	2.	Predictive Model: Develop an ML model to automate the detection of powdery mildew, significantly reducing the time and effort required for inspections.
+
+In essence, Farmy & Foods requires a scalable and efficient solution to combat powdery mildew in their cherry plantations. By automating the detection process, the ML model will save time, reduce manual labor, and provide consistent and accurate results, enabling the company to better manage their crops and resources.
 
 ## Hypothesis and how to validate?
 Hypothesis 1: Visual Distinction
