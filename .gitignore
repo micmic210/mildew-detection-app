@@ -8,3 +8,5 @@ node_modules/
 .github/
 cloudinary_python.txt
 kaggle.jsonoutputs/v1/*
+outputs/v1/*
+kaggle.json
