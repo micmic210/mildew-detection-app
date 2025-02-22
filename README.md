@@ -34,13 +34,12 @@ The images were captured from Farmy & Foods’ cherry crops and are publicly ava
 
 ## Business Requirements
 
-The client has outlined the following three business requirements:
+The client has outlined the following business requirements:
 1.	Visual Differentiation:
-	- Conduct a study to visually distinguish healthy cherry leaves from mildew-infected leaves.
-2.	Mildew Detection & Classification:
-	- Develop a Machine Learning model that predicts whether a given cherry leaf is healthy or infected based on an uploaded image.
-3.	Scalability & Future Applications:
-	- Analyze the potential to extend the system for detecting other plant diseases and integrate it with IoT and drone-based systems.
+	- Conduct a study to analyze and visually distinguish healthy cherry leaves from those infected with powdery mildew.
+2.	Mildew Detection & Prediction:
+	- Develop a Machine Learning model that can classify a cherry leaf as healthy or infected, helping predict the presence of powdery mildew in cherry trees.
+
 
 ---
 
